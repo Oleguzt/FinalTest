@@ -1,4 +1,7 @@
-﻿void DeleteAnotherInd(string[] array1, string[] array2)
+﻿string[] array1 = new string[5] {"hello", "2", "world", ":-)", "45"};
+string[] array2 = new string[array1.Length];
+
+void DeleteAnotherInd(string[] array1, string[] array2)
 {
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
@@ -14,9 +17,11 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{array[i]} ");;
     }
     Console.WriteLine();
 }
 DeleteAnotherInd(array1, array2);
+PrintArray(array1);
+Console.Write(" -> ");
 PrintArray(array2);
